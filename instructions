@@ -1,0 +1,18 @@
+Write an interactive program that reads from the keyed file created last week.
+This program takes id from standard input, and reads out the corresponding record from the file "students". If the record with the given id does not exist, the program prints "Does not exist!". Here is a sample run:
+
+ID >> 0
+Record: John, 101 555 1001, Anywhere
+Quit(y/n)? >> n
+
+ID >> 100
+Record: Does not exist!
+Quit(y/n)? >> ...
+
+Data structure to be used in this exercise:
+typedef struct student {
+char name[32];
+char phone[16];
+char address[128];
+} student_t;
+Assume the user always provides reasonable inputs.
